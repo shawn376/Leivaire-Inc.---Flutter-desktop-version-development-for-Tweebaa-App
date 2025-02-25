@@ -1,0 +1,38 @@
+{
+    "version" : "4",
+    "prompt" : "template",
+    "title" : "%group-settings.im.serviceAgreementAndPrivacyPolicy%",
+    "message" : "%group-settings.im.carefulReading%",
+    "buttonAccept" : "%group-settings.im.agreeAndAccept%",
+    "buttonRefuse" : "%group-settings.im.disagreeTemporarily%",
+    "hrefLoader" : "system|default",
+    "backToExit" : "false",
+    "second" : {
+        "title" : "%common.secondTitle%",
+        "message" : "%common.secondMessage%",
+        "buttonAccept" : "%common.secondButtonAccept%",
+        "buttonRefuse" : "%common.secondButtonRefuse%"
+    },
+    "disagreeMode" : {
+        "support" : false,
+        "loadNativePlugins" : false,
+        "visitorEntry" : false,
+        "showAlways" : false
+    },
+    "styles" : {
+        "backgroundColor" : "#FFFFFF",
+        "borderRadius" : "5px",
+        "title" : {
+            "color" : "#000000"
+        },
+        "buttonAccept" : {
+            "color" : "#000000"
+        },
+        "buttonRefuse" : {
+            "color" : "#000000"
+        },
+        "buttonVisitor" : {
+            "color" : "#000000"
+        }
+    }
+}

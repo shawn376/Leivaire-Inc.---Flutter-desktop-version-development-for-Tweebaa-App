@@ -1,0 +1,153 @@
+{
+    "code": "0",
+    "data": {
+        "ecoPlusDetails": {
+            "id": "1685491046232088576",
+            "title": "3222332",
+            "introduction": "323223",
+            "cover": {
+                "type": "img",
+                "imgUrl": "http://medias.tweebaa.cn/tweebaafilestest/prod/20230730/1685490560951083008.jpeg"
+            },
+            "type": "PERSONAL",
+            "categories": [
+                "PETS",
+                "VINTAGE"
+            ],
+            "tags": [
+                "dwad"
+            ],
+            "vision": "dwadwad",
+            "mission": "dwadawd",
+            "values": "dwadwada",
+            "background": {
+                "type": "img",
+                "imgUrl": "http://medias.tweebaa.cn/tweebaafilestest/prod/20230730/1685490653691338752.jpeg"
+            },
+            "medias": [
+                {
+                    "type": "img",
+                    "imgUrl": "http://medias.tweebaa.cn/tweebaafilestest/prod/20230730/1685490680182562816.jpeg"
+                }
+            ],
+            "serviceTags": [
+                "dwadwa"
+            ],
+            "serviceDescription": "[{\"type\":\"text\",\"value\":\"dwadddwa\"}]",
+            "brandStory": "[{\"type\":\"text\",\"value\":\"dwaddwwd\"}]",
+            "whyMe": "dawdad",
+            "suggestionStatus": {
+                "tweebaa.im.group": false,
+                "tweebaa.blog": false,
+                "tweebaa.product": false,
+                "tweebaa.blockChain.nft": false,
+                "tweebaa.activity": false,
+                "tweebaa.challenge": false,
+                "tweebaa.ecoplus": false
+            },
+            "partnerEnListPlans": {
+                "tweebaa.ecoplus.daoPartner": {
+                    "id": "1685491046332751872",
+                    "group": "tweebaa.ecoplus.daoPartner",
+                    "declaration": "dwada",
+                    "taskPlan": null,
+                    "extraBenefits": [
+                        "[{\"type\":\"text\",\"value\":\"dwad\"}]"
+                    ],
+                    "selectedMemberIds": null
+                },
+                "tweebaa.ecoplus.shareHoldingPartner": {
+                    "id": "1685491046349529088",
+                    "group": "tweebaa.ecoplus.shareHoldingPartner",
+                    "declaration": "dwadd",
+                    "taskPlan": null,
+                    "extraBenefits": [
+                        "[{\"type\":\"text\",\"value\":\"dwawddwad\"}]"
+                    ],
+                    "selectedMemberIds": null
+                },
+                "tweebaa.ecoplus.defiPartner": {
+                    "id": "1685491046362112000",
+                    "group": "tweebaa.ecoplus.defiPartner",
+                    "declaration": "",
+                    "taskPlan": null,
+                    "extraBenefits": [
+                        ""
+                    ],
+                    "selectedMemberIds": null
+                },
+                "tweebaa.ecoplus.memberPartner": {
+                    "id": "1685491046370500608",
+                    "group": "tweebaa.ecoplus.memberPartner",
+                    "declaration": "dwadawd",
+                    "taskPlan": null,
+                    "extraBenefits": [
+                        ""
+                    ],
+                    "selectedMemberIds": null
+                },
+                "tweebaa.ecoplus.managerPartner": {
+                    "id": "1685491046387277824",
+                    "group": "tweebaa.ecoplus.managerPartner",
+                    "declaration": "dwadwadaw",
+                    "taskPlan": null,
+                    "extraBenefits": [
+                        ""
+                    ],
+                    "selectedMemberIds": null
+                }
+            },
+            "enlisting": true,
+            "favored": false,
+            "isTheOwner": false,
+            "owner": {
+                "id": "1558021748837003264",
+                "countryCallingCode": "86",
+                "inviter": "1",
+                "phoneNumber": "173071481****",
+                "registerCountryCode": "CN",
+                "nickName": "tw-屈城武",
+                "userName": "tb_155801748832808960",
+                "tiv": 0,
+                "signature": "1",
+                "gender": "MALE",
+                "avatar": "http://medias.tweebaa.cn/tweebaafilestest/prod/20221022/1583838240421675009.png",
+                "createTime": 1660296306000,
+                "tags": [
+                    "23232",
+                    "32323",
+                    "323223"
+                ],
+                "useExactGeoLocation": false,
+                "spaceBackground": {
+                    "type": "img",
+                    "imgUrl": "http://medias.tweebaa.cn/tweebaafilestest/prod/20230730/1685604598498418688.jpg"
+                },
+                "showGender": true,
+                "relations": [
+                    "STRANGER"
+                ]
+            },
+            "interactionVo": {
+                "siteId": "tweebaa.ecoplus",
+                "id": "1685491046232088576",
+                "likedCount": 0,
+                "liked": false,
+                "favoriteCount": 0,
+                "favorite": false,
+                "commentCount": 0,
+                "giftCount": 0
+            }
+        },
+        "userAccessCounts": [
+            {
+                "siteId": "tweebaa.im.group",
+                "count": 2
+            },
+            {
+                "siteId": "tweebaa.blog.blog",
+                "count": 1
+            }
+        ]
+    }
+}

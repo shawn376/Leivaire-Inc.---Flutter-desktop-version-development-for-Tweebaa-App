@@ -1,0 +1,3631 @@
+{
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/blog/index",
+        "text": "广场"
+      },
+      {
+        "pagePath": "pages/discovery/index",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/product/index",
+        "text": "产品"
+      },
+      {
+        "pagePath": "pages/chat/index",
+        "text": "互动"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Tweebaa",
+    "navigationBarBackgroundColor": "#f4f7fd",
+    "backgroundColor": "#fff",
+    "usingComponents": {},
+    "app-plus": {
+      "softinputMode": "adjustResize",
+      "bounce": "none"
+    }
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^tui-(.*)": "@/thorui_components/thorui/tui-$1/tui-$1.vue",
+      "^t-uni-(.*)": "@/components/t-uni/uni-$1/components/uni-$1/uni-$1.vue",
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+      "^tw-common-(.*)": "@/components/tw/common/$1.vue",
+      "^tw-(.*)": "@/components/tw/tw-$1/tw-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/blog/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "scrollIndicator": "none",
+          "enablePullDownRefresh": false,
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/index",
+      "style": {
+        "navigationStyle": "custom",
+        "backgroundColorTop": "#eff2fa",
+        "backgroundColorBottom": "#eff2fa",
+        "backgroundColor": "#eff2fa",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/group-search",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/address-search",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/create-group-type",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/create-group-introduce",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/view",
+      "style": {
+        "navigationBarTitleText": "chat",
+        "navigationStyle": "custom",
+        "scrollIndicator": "none",
+        "softinputNavBar": "none",
+        "bounce": "none",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/chat-message/preview",
+      "style": {
+        "navigationBarTitleText": "chat",
+        "navigationStyle": "custom",
+        "scrollIndicator": "none",
+        "softinputNavBar": "none",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/chat/chat-message/preview-simple",
+      "style": {
+        "navigationBarTitleText": "chat",
+        "navigationStyle": "custom",
+        "scrollIndicator": "none",
+        "softinputNavBar": "none",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/chat/group-apply-message-info",
+      "style": {
+        "app-plus": {
+          "titleNView": false,
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/group-join-apply",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/chat-search/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/chat-search/message-search",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/recent-apply",
+      "style": {
+        "app-plus": {
+          "enablePullDownRefresh": false,
+          "titleNView": false,
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/group-apply-detail",
+      "style": {
+        "app-plus": {
+          "enablePullDownRefresh": false,
+          "titleNView": false,
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/group-settings",
+      "style": {
+        "navigationBarTitleText": "%group-settings.groupSetTitle%",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/chat/group-setting-synthesis",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group/preview",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/chat-message/preview-message",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false,
+        "backgroundColorTop": "#eff2fa"
+      }
+    },
+    {
+      "path": "pages/chat/chat-message/copy-messages",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false,
+        "backgroundColorTop": "#eff2fa"
+      }
+    },
+    {
+      "path": "pages/chat/call/live",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/components",
+      "style": {
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/common/personal-contact-card/index",
+      "style": {
+        "app-plus": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false,
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/discovery/featured/add",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/discovery/featured/add-success",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/chat-personal-details/rich-contacts-search",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/dataAnalysis/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/editor-choose/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/editor-choose/addReason",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/components/chat-view/groupMemberList",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/attendees/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/chooseGroup/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/groupLinkage/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/meetingRights/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/meeting-center/call-center",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/add-physical/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/blog/videoList/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/adviser/evaluation",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/blog/view",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/group-otherGroup",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/search",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/discovery/ecosystem/view",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/product-detail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/add-personal-space",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/logistics-services/logistics-services",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/logistics-services/set-up-logistics",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/logistics-services/pick-up-goods-offline",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/logistics-services/address-book",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/logistics-services/offline-pickup-settings",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/logistics-services/map-address",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/logistics-services/delivered-by-buyer",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/products-physical-detail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/mass-assessment",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/rich-text-show/rich-text-detail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/rich-text-show/rich-text-list",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/h5-share-group",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/chat-personal-details/chat-personal-details",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/chat-personal-details/give-remark",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "scrollIndicator": "none",
+          "enablePullDownRefresh": false,
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/chat-personal-details/personal-card",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/card-css",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/comment-two-list",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/system/permission-management",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/system/permission-management-text",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/value-body/blank-show",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/value-body/memory-detail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/transfer-accounts/red-packet-detail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/value-search/value-search",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/applicant-management",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/contacts/send-invite",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/contacts/personality-label/personality-label-list",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/contacts/personality-label/create",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/contacts/personality-label/management",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/chat-personal-details/inviter-list",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/chat-personal-details/ringtone-setting",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/user/forge-value-body",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/blog/add-form",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustResize"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/chat-personal-details/remark-history",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/space/accelerator",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/chat-personal-details/remark-history-group",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/space/view-list",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/chat-personal-details/send-invitation",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/reward/reward-details",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/message/index",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/index/search",
+      "style": {
+        "titleNView": false,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/index/search-result",
+      "style": {
+        "titleNView": false,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/webview",
+      "style": {}
+    },
+    {
+      "path": "pages/chat/mute/mute",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/group-member/group-member",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/group-member-handle/group-member-handle",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/meeting/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/set-map",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/video-play",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/forward",
+      "style": {
+        "navigationStyle": "custom",
+        "scrollIndicator": "none"
+      }
+    },
+    {
+      "path": "pages/chat/like-detail",
+      "style": {
+        "navigationBarTitleText": " "
+      }
+    },
+    {
+      "path": "pages/chat/merge-message",
+      "style": {
+        "navigationStyle": "custom",
+        "scrollIndicator": "none"
+      }
+    },
+    {
+      "path": "pages/chat/toping-message",
+      "style": {
+        "navigationStyle": "custom",
+        "scrollIndicator": "none"
+      }
+    },
+    {
+      "path": "pages/common/download-app",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/stranger/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/share",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/common/choose-user/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/user/phone-list",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/group-avatars",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/modifyGroupName",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/modify-group-introduction",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-category",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-information",
+      "style": {
+        "navigationBarTitleText": "  "
+      }
+    },
+    {
+      "path": "pages/chat/personalized-tags",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-comments",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-nickname",
+      "style": {
+        "navigationBarTitleText": "  "
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/ecological-plus-setting",
+      "style": {
+        "navigationBarTitleText": "编辑该“生态+”内容"
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/modify-name",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/edit-update",
+      "style": {
+        "navigationBarTitleText": "%t.tweeLog.myFooter.contentRequest%"
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/modify-tags",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/modify-characteristic",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/modify-type",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/modify-category",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/modify-vision-mission-values",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/modify-avatars",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/modify-display-diagram",
+      "style": {
+        "navigationBarTitleText": "%group-settings.groupEdit.projectSeriesDisplayDiagram%"
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/modify-service-introduction",
+      "style": {
+        "navigationBarTitleText": "%group-settings.groupEdit.introductionToProductsAndServices%"
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/modify-story-introduction",
+      "style": {
+        "navigationBarTitleText": "%group-settings.groupEdit.brandStoryAndIntroduction%"
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/modify-strengths-weaknesses",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/modify-why-follow",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/task-situation/task-situation",
+      "style": {
+        "navigationBarTitleText": "%group-settings.groupEdit.taskCompletionOfParticipants%"
+      }
+    },
+    {
+      "path": "pages/discovery/task-situation/task-text",
+      "style": {
+        "navigationBarTitleText": "%chat.applicant-management.customTask%"
+      }
+    },
+    {
+      "path": "pages/discovery/task-situation/task-details",
+      "style": {
+        "navigationBarTitleText": "任务明细"
+      }
+    },
+    {
+      "path": "pages/discovery/member-partner/membership",
+      "style": {
+        "navigationBarTitleText": "%group-settings.groupEdit.applyToJoin%",
+        "navigationBarBackgroundColor": "rgb(244, 247, 253)"
+      }
+    },
+    {
+      "path": "pages/discovery/member-partner/add-members",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/follow-fans/follow-fans",
+      "style": {
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/product/identity-selection/identity-selection",
+      "style": {
+        "navigationBarTitleText": "%group-settings.groupEdit.theSelectionOfTheProponentsIdentity%"
+      }
+    },
+    {
+      "path": "pages/space/reward",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/pay/forget",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/pay/password",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/pay/fast",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/pay/intro",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/cs",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/solitaire/solitaire",
+      "style": {
+        "navigationBarTitleText": "%group-settings.im.solitaire4%"
+      }
+    },
+    {
+      "path": "pages/chat/solitaire/index",
+      "style": {
+        "navigationBarTitleText": "%value-body.personalizedSolitaire%"
+      }
+    },
+    {
+      "path": "pages/chat/solitaire/preview",
+      "style": {
+        "navigationBarTitleText": "%group-settings.im.personalizedDragonPreview%"
+      }
+    },
+    {
+      "path": "pages/discovery/ecosystem/selected-content1",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecosystem/selected-details",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecosystem/selected-records",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-leader-map",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/preview-view",
+      "style": {
+        "navigationBarTitleText": "%group-settings.im.viewChanges%"
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/selected-type",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/purchase-application",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/managing-partner",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/identity-selection",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/identity-selection-personal",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/set-coupon",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/meeting-coming",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/chat-settings",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/remarks",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/report",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/call-coming",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "background": "#27292B",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/call/index",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "background": "#27292B",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/cs",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/chat-background/chat-background",
+      "style": {
+        "navigationBarTitleText": "%group-settings.im.changeAllChatBackgrounds%"
+      }
+    },
+    {
+      "path": "pages/chat/chat-background/historical-background",
+      "style": {
+        "navigationBarTitleText": "%t.general.historyRecords%"
+      }
+    },
+    {
+      "path": "pages/chat/chat-background/preview-background",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecosystem/selected-type",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecosystem/selected-type1",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/red-envelopes",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/action/call-action/call-details",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/transfer-accounts/transfer-accounts",
+      "style": {
+        "navigationBarTitleText": "%group-settings.im.transferMoney%"
+      }
+    },
+    {
+      "path": "pages/chat/transfer-accounts/create-red-wrap",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/transfer-accounts/create-transfer1",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/transfer-accounts/create-red-introduce",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/transfer-accounts/payment-successful",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/chat/snatch-bag",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/red-packet-record",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/meeting-record",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/chat/business-card/business-card",
+      "style": {
+        "navigationBarTitleText": "%group-settings.im.select%"
+      }
+    },
+    {
+      "path": "pages/user/new-login",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/retrieve-password",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/user-agreement",
+      "style": {
+        "navigationBarTitleText": "%t.loginRegister.termsText%"
+      }
+    },
+    {
+      "path": "pages/user/privacy-agreement",
+      "style": {
+        "navigationBarTitleText": "《推易吧隐私权政策》"
+      }
+    },
+    {
+      "path": "pages/chat/select-card",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/discuss",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/multigroup-details",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/share",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/linkage-cover",
+      "style": {
+        "navigationBarTitleText": "%group-settings.im.setAMultigroupLinkagePicture%"
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/linkage-value",
+      "style": {
+        "navigationBarTitleText": "%group-settings.im.multipleGroupLinkageReasons%"
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/linkage-characteristic",
+      "style": {
+        "navigationBarTitleText": "%group-settings.im.multiGroupLinkageEyeCatchingFeaturesAndKeyPoints%"
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/linkage-time",
+      "style": {
+        "navigationBarTitleText": "%group-settings.im.setTheTimeWhenMultipleGroupsWorkTogether%"
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/linkage-theme",
+      "style": {
+        "navigationBarTitleText": "%group-settings.im.setTheTopicOfMultigroupInteraction%"
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/created-linkage",
+      "style": {
+        "navigationBarTitleText": " "
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/linkage-operation",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/members",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/face-to-face",
+      "style": {
+        "navigationBarTitleText": "%group-settings.im.faceToFaceGroupBuilding%"
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/apply-join",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/meeting/meeing-details",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/contacts/add-thirdParty",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/meeting/share",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/meeting-center/index",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/collect-label",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/meeting-center/create-meeting",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/my-wallet/index",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/nft/my-nft/history",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/linkage-center",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/function-introduction",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/bindingSettings",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/hairWarehouse",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/incomeChain",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/groupBuying",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/valuePromotion",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/setTheGroupHostDynamic",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecosystem/ecoplus-list",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/personal-manager/personal-state",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/personal-manager/personal-gender",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/personal-manager/personal-speciality",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/binding-module",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/add-bind",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/account-security/index",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/setup-center/account-security/equipment",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/account-security/payment",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/setup-center/personal-manager/personal-qrcode",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/edi-profile/replace-phone",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/setup-center/edi-profile/replace-phone2",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/setup-center/account-security/set-password",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/setup-center/account-security/harvestAddress",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/personal-manager/intro",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/notifications/discover",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/notifications/general",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/notifications/message",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/notifications/productcenter",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/notifications/schedule",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/notifications/wall",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/notifications/notifications-default",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/reward/view",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/public/add-physics",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/edit-group",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/edit-group-cover",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-admissionApproval",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-paidEntry",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-position",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/groupPicture",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/personalInformation",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-wish",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-taskEntry",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/bindingContent",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/inGroup-admin/index",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/inGroup-admin/join-applyFor",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/inGroup-admin/history",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-mute",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/add",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/preview",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/member-list",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/notice-history",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/edit-notice",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-recommend",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/common-group",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/mute/new-mute",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/stranger-list",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/notify",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/choose-group",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/universal-set/set-language",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/universal-set/set-font-size",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/privacy-set",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/find-my-set",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/invite-set",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/call-to-action/view",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/call-to-action/offline-list",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/call-to-action/add-offline",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/meeting/apply-join",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/notes-list",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/meeting/preview",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/call-to-action/components/add-reward-pay",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/call-to-action/components/pay-success",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/pusher/add-customized",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/add-physical/p-add-physical",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/add-physical/components/coverMain2",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/add-physical/components/infoMain2",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/add-physical/components/worldMain2",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/tiv/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/user/tar/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/user/tiv/contribution-graph",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/user/tiv/tiv-evaluator",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/setup-coupon",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/add-nft-nm/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/add-nft-dao/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/add-nft-stock/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/add-nft-defi/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/warehouse",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/pusher/buy",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/pusher/product-details",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/shop-car-index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/my-address",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/add-address",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/confirm-order",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/more-address-order",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/buy-now",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/my-wallet",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/my-account",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/add-account",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/my-order",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/pay-success",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/free-goods",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/free-goods-conditions",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pusher/recommended-goods",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/set-group-admin",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/chat/creator-group",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/blog/add",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/common/add-type",
+      "style": {
+        "app-plus": {
+          "softinputMode": "adjustPan"
+        },
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/discovery/create-discovery-introduce",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/discovery/admin",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/discovery/discovery-apply-list",
+      "style": {
+        "navigationBarTitleText": "",
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/create-product-introduce",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/product/create-personal-introduce",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/product/btn",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/space/view",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white",
+        "style": {
+          "enablePullDownRefresh": "false"
+        }
+      }
+    },
+    {
+      "path": "pages/product/upload-my-video",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/discovery/creator-discovery",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/discovery/approval-reasons",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-certification/apply-certification",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "scrollIndicator": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-certification/reject-reason",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "scrollIndicator": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-certification/apply-certification-introduce",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/discovery/federation/create-federation-introduce",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/discovery/federation/apply-certification",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "scrollIndicator": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/discovery/pending-applications/new-submit",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "scrollIndicator": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/discovery/pending-applications/history-detaile",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "scrollIndicator": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/orders/lotsize-buy",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/product/orders/transaction-history",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/product/orders/shipping-records",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/orders/delivery-arrangement",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/qrcode",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/edit-remark",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/reward/create-reward-introduce",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/action/create-action-introduce",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/group-assistant/mass-Information",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/chat/group-assistant/mass-history",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/chat/reject-message-settings",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/chat/message-sound-alert",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/chat/vote/vote-scheme-list",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/user/invite-share/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/invite-share/my-invite",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "#f4f7fd"
+      }
+    },
+    {
+      "path": "pages/user/invite-share/make-poster",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "#f4f7fd"
+      }
+    },
+    {
+      "path": "pages/user/setup-center/index",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/setup-center/edi-profile/index",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/setup-center/edi-profile/revise-name",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/edi-profile/revise-birthday",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/edi-profile/revise-emile",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/edi-profile/revise-ident",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/edi-profile/revise-phone",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/edi-profile/revise-inviter",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/personal-manager/index",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/setup-center/personal-manager/personal-avatar",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/personal-manager/personal-nickName",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/personal-manager/personal-tweebaaId",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/personal-manager/personal-spaceBg",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/personal-manager/personal-tags",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/my-collect/index",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd",
+          "app-plus": {
+            "bounce": "none",
+            "softinputMode": "adjustPan"
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/user/my-collect/manage",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/user/my-collect/addNote",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/user/my-collect/folderDetail",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/task-completion",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/winners-list",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/participant-list",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/admin",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/join",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/modify-introduction",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/modify-cover",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/modify-classify",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/modify-tags",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/modify-address",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/modify-reason",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/modify-deadline",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/modify-additionalRewards",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/modify-rewardSetting",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/modify-taskSetting",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/modify-bindGroup",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/modify-recommended",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/modify-userForm",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/chat-personal-details/common-group",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/backstage/index",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/backstage/my-create",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/backstage/my-joined",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/backstage/to-join",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/backstage/approve-detail",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/contacts/edit-contacts",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/group-list",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/members-group",
+      "style": {
+        "navigationStyle": "custom",
+        "style": {
+          "backgroundColor": "#f4f7fd"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/contacts/personality-label/edit",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/contacts/category/choose-people",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/contacts/category/choose-group",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/group-apply-invitation",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/backstage-taskDetail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/backstage/choose-person",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/backstage/myJoin",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/meeting/meeting-introduce",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/space/page-view",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/meeting-backstage/my-create",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/meeting-backstage/approve-detail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/multigroup/backstage/approve-detail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/product/create-dao-introduce",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/user/attractiveness-value",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/add-success",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecosystem/createdEcological",
+      "style": {
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/emoji",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/partnerSetting/dao-partner",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/partnerSetting/equity-partner",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/partnerSetting/defi-partner",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/partnerSetting/member-partner",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/partnerSetting/administrator-partner",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-plus-setting/socialSetting/social-setting",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecological-mission/choose-task",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/ecosystem/previewCover",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/draftBox/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/create-product/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/create-entityProduct/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/create-entityProduct/settingsSKU",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/create-entityProduct/showSkuList",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/adv-entity-product/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/adv-entity-product/other/show-all-revenues",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/components/show-contributor-case",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/components/contributors-earnings",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/components/product-selection/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/components/batch-and-group-case",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/components/revenue-guide",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/adv-entity-product/other/example-guidance",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/product/adv-entity-product/other/product-preview",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/time-limited-reward/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/discovery/time-limited-reward/preview-cover-page",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/execCommand",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/create-related/task-settings",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/create-related/Improve-information",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/create-related/draftBox/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/group/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/group/createGroup",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group/component/select-binding",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/vote/create-vote",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/chat/vote/finish-pages",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/vote/vote-null",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-leader-dynamics",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/vote/voting-interface",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/vote/vote-results",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/vote/voting-record",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/create-related/calculator/retail-calculator",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/create-related/calculator/gp-calculator",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/create-related/calculator/valuation-calculator",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/vote/vote-detail",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-assistant/mass-index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-assistant/mass-new-create",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/register-success",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/message-reminder/voice-reminder",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/message-reminder/message-reminder",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/message-reminder/accept-reject-settings",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-backstage/applicant-management",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-backstage/task-details",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-backstage/task-situation",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-backstage/task-situation-new",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-backstage/group-approval",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-backstage/payment-completion",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-backstage/exempt-personnel-list",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/vote/vote-query",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/nft/my-nft/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/nft/my-nft/nft-extract",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/setup-center/universal-set/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/common/user-select-list/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/blog/add-form-permit",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/blog/retweet",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/user-select-list/index-copy",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/create-related/add-task/add-task",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/reward/add",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/reward/components/add-special",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/reward/components/add-preview",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/footprint",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-assistant/mass-class",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/meeting-center/index-new",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/meeting-center/components/index-set",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-assistant/mass-change-class",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/chat/group-assistant/mass-add-message",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/create-related/draftBox/index-new",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/source-parse/index",
+      "style": {
+        "titleNView": false,
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/components/add-guideline",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/reward/components/add-reward-pay",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/reward/components/pay-success",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/call-to-action/add",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/call-to-action/components/add-cover-preview",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/call-to-action/components/address-list",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/call-to-action/components/address-new",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/common/html2canvas-debugging",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/discovery/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white",
+        "app-plus": {
+          "bounce": "none",
+          "scrollIndicator": "none",
+          "enablePullDownRefresh": true,
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/discovery/admin-dao",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/discovery/issue-nfts",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/group/view",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/custom-products/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/evaluate-product/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/evaluate-product/reEvaluate-product",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/add-digital/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/add-real/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/add-nft/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/create-physical/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/cover-preview",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/components/create-product/add-success",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/product/create-product/add-success",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "bounce": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTextStyle": "white",
+        "app-plus": {
+          "bounce": "none",
+          "scrollIndicator": "none",
+          "softinputMode": "adjustPan"
+        }
+      }
+    },
+    {
+      "path": "pages/user/setting",
+      "style": {
+        "navigationBarTitleText": "%general.setting%"
+      }
+    },
+    {
+      "path": "pages/user/country-code",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "titleNView": false
+      }
+    }
+  ]
+}
